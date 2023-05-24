@@ -2,7 +2,7 @@ const axios = require('axios')
 const { Country } = require('../db')
 
 
-const API = 'https://restcountries.com/v3/all';
+const API = 'https://rest-countries.up.railway.app/v3/all';
 
 const dataFromApi = async () => {
     try {

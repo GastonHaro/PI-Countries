@@ -3,17 +3,15 @@ import style from './CardsContainer.module.css'
 import { useSelector } from 'react-redux'
 
 
-const CardsContainer = () => {
-    const countries = useSelector(state=>state.countries)
+const CardsContainer = ({countries}) => {
 
     return(
         <div className={style.container}>
-            {countries.map(country => {
+            {countries?.map(country => {
                 return <Card 
                     key={country.id}
                     id={country.id}
                     name={country.name}
-                    population={country.population}
                     continent={country.continent}
                     flags={country.flags}
                 />

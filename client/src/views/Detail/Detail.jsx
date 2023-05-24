@@ -1,24 +1,32 @@
 import { useParams } from 'react-router-dom'
+import DetailActivities from '../../Components/DetailActivities/DetailActivites';
 import DetailCard from "../../Components/DetailCard/DetailCard";
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { getCountry } from '../../redux/actions';
+import { cleanDetail, getActivities, getCountry } from '../../redux/actions';
 
 
 
 const Detail = () => {
-    const {id} = useParams()
-    console.log(id);
-
+    const { id } = useParams()
     const dispatch = useDispatch()
 
     useEffect(()=>{
-        dispatch(getCountry(id))
+        dispatch(getCountry(id));
+        dispatch(getActivities)
+        return () => {
+            dispatch(cleanDetail())
+        }
     },[dispatch, id])
 
     return (
         <div>
-            <DetailCard />
+            <div>
+                <DetailCard />
+            </div>
+            <div>
+                <DetailActivities />
+            </div>
         </div>
     )
 };

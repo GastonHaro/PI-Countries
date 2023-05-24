@@ -3,7 +3,13 @@ const { Op } = require('sequelize');
 
 
 const getCountries = async () => {
-    const countries = await Country.findAll()
+    const countries = await Country.findAll({
+        include: [{
+            model: Activity,
+            attributes: ['name', 'difficulty', 'duration', 'season'],
+            through: { attributes: [] }
+         }]
+    })
     return countries;
 };
 

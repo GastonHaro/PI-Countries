@@ -1,0 +1,36 @@
+.container{
+    height: 230px;
+    display:block;
+    border: 2px solid black;
+    width: 205px;
+    background-color: black;
+    border-radius: 4%;
+    margin-left: 25px;
+    margin-top: 420px;
+    position: fixed;
+}
+
+.inputsContainer{
+    display: block;
+    height: 110px;
+    width: 200px;
+    background-color: beige;
+    border-radius: 4%;
+    border: 2px solid black;
+}
+
+.inputsContainer legend{
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-right: 0px;
+}
+
+.inputsContainer input {
+    text-align: left;
+    margin-top: 7px;
+    margin-left: 3px;
+}
+
+.inputsContainer label{
+    margin-left: 5px;
+}

@@ -1,17 +1,35 @@
 .img {
-    width: 300px;
-    height: auto;
     border-radius: 15px;
+    
   }
-
-.container{
-  border: 2px solid black;
-  border-radius: 10px;
-  display:inline-block;
+  
+  .container{
+    border-radius: 10px;
+    display:inline-block;
+    text-overflow: ellipsis;
+    margin: 1px;
+    border: 2px solid black;
+    background-color: #87878b;
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 0.8rem;
+}
+.container:hover{
+  box-shadow: rgba(0, 0, 0, 0.8) 3px 0px 7px 5px;
+}
+.continentCard{
+  color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+ 
 }
 
-.name{
-  background-color: crimson;
-
+.title{
+ text-align: center;
+ color: black;
+ margin-bottom: 1rem;
+ margin-top: 1rem;
+ 
 }
   

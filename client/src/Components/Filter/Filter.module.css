@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+
+}
+
+.container{
+    height: 330px;
+    display:block;
+    border: 2px solid black;
+    width: 205px;
+    background-color: black;
+    border-radius: 4%;
+    margin-left: 25px;
+    position: fixed;
+    margin-top: 77px;
+}
+.containerInputs{
+    display: block;
+    height: 210px;
+    width: 200px;
+    background-color: beige;
+    border-radius: 4%;
+    border: 2px solid black;
+    
+}
+.containerInputs div {
+    text-align: left;
+    display: flex;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.containerInputs input {
+    margin-right: 5px;
+    margin-left: 3px;
+}
+.containerInputs legend {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+
+.containerFilterActivity{
+    display: block;
+    height: 110px;
+    width: 200px;
+    background-color: beige;
+    border-radius: 4%;
+    border: 2px solid black;
+    
+}
+.containerFilterActivity legend{
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.containerFilterActivity input {
+    margin-right: 5px;
+    margin-left: 3px;
+    
+}
+
+.inputsActivity{
+text-align: left;
+display: flex;
+text-align: left;
+margin-top: 10px;
+margin-bottom: 10px;
+}

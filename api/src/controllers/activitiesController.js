@@ -7,7 +7,7 @@ const postActivities = async (name, difficulty, duration, season, idPais) => {
         duration,
         season
         });
-
+    
     newActivity.addCountries(idPais);
     return newActivity;
 };

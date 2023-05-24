@@ -8,7 +8,7 @@ module.exports = (sequelize) => {
             primaryKey: true
         },
         name: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(36),
             allowNull: false
         },
         difficulty: {
@@ -22,15 +22,15 @@ module.exports = (sequelize) => {
         },
         duration: {
             type: DataTypes.TIME,
-            allowNull: true,
+            allowNull: false,
             Comment: ''
         },
         season: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                isIn: [['summer', 'winter', 'autumn', 'spring']]
+                isIn: [['Summer', 'Winter', 'Autumn', 'Spring']]
             }
-        },
+        }
     }, { timestamps: false })
 }

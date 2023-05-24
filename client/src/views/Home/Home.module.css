@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&family=Trispace:wght@200;600;700&display=swap');
+
 .container{
-    background-color: bisque;
+    font-family: 'Trispace', sans-serif;
+    font-weight: 300;
+    background-color: #2f2e33 ;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.containerPag{
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 30%;
+    height: 2rem;
+
+}
+.containerPag button{
+    background-color: #b2b3b8;
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid black;
+    
 }

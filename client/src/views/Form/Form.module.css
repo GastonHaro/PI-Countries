@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&family=Trispace:wght@200;600;700&display=swap');
+
+.container{
+    display: contents;
+    text-align: left;
+    font-family: 'Trispace', sans-serif;
+}
+.formCont{
+    background-color: #99A3A4;
+    height: 670px;
+}
+.formCont h1{
+    text-align: center;
+    padding: 2rem 0rem 0rem 0rem;
+    margin-bottom: 5rem;
+
+}
+.formCont h2{
+    text-align: center;
+}
+
+.submitButton{
+    background-color: #99A3A4;
+    height: 2rem;
+    border: 1px solid black;
+    color: black;
+    border-radius: 15%;
+    margin-left: 40%;
+
+}
+.addButton{
+    background-color: #99A3A4;
+
+    border: 1px solid black;
+    color: black;
+    border-radius: 15%;
+    margin-left: 8px;
+}
+
+.inputCont{
+    margin: 1rem 1rem 0rem 38%;
+    width: 330px;
+    border: 2px solid #707B7C;
+    background-color: #707B7C;
+}
+.inputCont legend{
+    text-align: center;
+}
+.radio{
+    margin-left: 6px;
+}
+.error{
+    background-color: beige;
+    text-align: center;
+    color: red;
+}
+
+
+
